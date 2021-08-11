@@ -1,0 +1,68 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    min-height: 100vh;
+    background-image: url("background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hours, #separator, #minutes {
+    font-size: 3em;
+}
+
+#seconds {
+    font-size: 1.5em;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#date {
+    padding: 2px 25px;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0 0 3px lightgray;
+}
+
+#clock {
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 0.8;
+    box-shadow: -2px 5px 10px gray;
+    text-shadow: 0 0 3px lightgray;
+}
+
+#h24 {
+    display: none;
+}
+
+#h12, #h24 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 0.8;
+    box-shadow: -2px 5px 10px gray;
+}
+
+#h12:hover, #h24:hover {
+    background-color: rgb(15, 29, 29);
+}
+
+#h12:active, #h24:active {
+    transform: scale(0.98);
+    box-shadow: -1px 2.5px 5px gray;
+}

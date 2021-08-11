@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Clock</title>
+</head>
+<body>
+
+    <div id="content">
+        <div id="clock">
+            <div id="date">
+                <span id="ampm"></span>
+                <div id="fulldate">
+                    <span id="weekday"></span>
+                    <span id="month"></span>
+                    <span> - </span>
+                    <span id="day"></span>
+                </div>
+            </div>
+            <span id="hours"></span>
+            <span id="separator">:</span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
+        </div>
+    </div>
+
+    <button id="h12">Click to change to 12H</button>
+    <button id="h24">Click to change to 24H</button>
+    
+    <script src="digitalclock.js"></script>
+
+</body>
+</html>
